@@ -1,27 +1,43 @@
 import { defineConfig } from 'astro/config';
+import aws from 'astro-sst';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  adapter: aws(),
+  vite: {
+    optimizeDeps: ['sst'],
+  },
+  integrations: [
+    starlight({
+      title: 'DevPortal Docs',
+      logo: {
+        src: '/src/assets/images/sensedia-logo.png',
+      },
+      customCss: ['./src/styles/custom-style.css'],
+      defaultLocale: 'pt',
+      locales: {
+        root: {
+          label: 'portuguese',
+          lang: 'pt',
+        },
+      },
+
+      sidebar: [
+        {
+          label: 'Guias',
+          items: [
+            // Each item here is one entry in the navigation menu.
+            {
+              label: 'Introdução ao CMS Externo',
+              link: '/guides/introduction-to-external-cms/',
+            },
+          ],
+        },
+        {
+          label: 'Referências',
+          autogenerate: { directory: 'reference' },
+        },
+      ],
+    }),
+  ],
 });
