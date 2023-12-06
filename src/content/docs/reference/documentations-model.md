@@ -9,7 +9,7 @@ As documentações são um dos principais conteúdos do DevPortal. Elas são exi
 
 O modelo da coleção **Documentation** é composto pelos seguintes campos:
 
-![Modelo das Documentações](/src/assets/images/documentations-model.png)
+![Modelo das Documentações](/images/documentations-model.png)
 
 - **docs**: Documentação. Esse campo é utilizado para escrever a documentação em Markdown.
 

@@ -11,7 +11,7 @@ Elas são populadas na configuração inicial e são atualizadas automaticamente
 
 O modelo da coleção **Apis** é composto pelos seguintes campos:
 
-![apis-model](/src/assets/images/apis-model.png)
+![apis-model](/images/apis-model.png)
 
 - **name**: Nome da api. Esse campo é utilizado para identificar a api no DevPortal e deve ser único.
 - **description**: Descrição da api. Esse campo é utilizado para descrever a api no DevPortal.
@@ -31,7 +31,7 @@ As APIs são exibidas no DevPortal de acordo com as suas categorias. As categori
 
 O modelo da coleção **ApisCategory** é composto pelos seguintes campos:
 
-![Modelo das Categorias das APIs](/src/assets/images/apis-category-model.png)
+![Modelo das Categorias das APIs](/images/apis-category-model.png)
 
 - **name**: Nome da categoria. Esse campo é utilizado para identificar a categoria no DevPortal e deve ser único.
 - **apis**: Lista de apis que pertencem a essa categoria. Esse campo é utilizado para relacionar as apis com as categorias.

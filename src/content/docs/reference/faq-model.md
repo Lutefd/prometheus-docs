@@ -21,7 +21,7 @@ O modelo da coleção **QNAs** é composto pelos seguintes campos:
 - **question**: Pergunta. Esse campo é utilizado para exibir a pergunta no FAQ.
 - **answer**: Resposta. Esse campo é utilizado para exibir a resposta no FAQ.
 - **slug**: Slug. Esse campo é utilizado para identificar a pergunta e deve ser único. Ele é utilizado para indexar a pergunta na busca do FAQ. **Esse campo é gerado automaticamente, recomendamos clicar no botão de geração para melhor indexação após preencher a pergunta**.
-  ![Slug](//images/slug.png)
+  ![Slug](/images/slug.png)
 
 ### Categorias
 
