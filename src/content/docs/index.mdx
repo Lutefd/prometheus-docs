@@ -1,36 +1,26 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-      variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+title: Introdução ao DevPortal
+description: Entenda melhor como utilizar o seu DevPortal provido pela Sensedia
+template: doc
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+Essa documentação é destinada aos administradores que irão utilizar o DevPortal provido pela Sensedia. Aqui você encontrará informações sobre como utilizar o DevPortal, como gerenciar e customizar a exibição de suas APIs, como criar e gerenciar suas documentações e seu conteúdo no geral.
+
+O DevPortal dispõe de duas formas de gerenciamento de conteúdo, sendo elas:
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="CMS Externo" icon="pencil">
+    [Gerenciamento através de um CMS externo, já configurado e pronto para uso.
+    Passado para o cliente no momento da entrega do
+    DevPortal.](/guides/introduction-to-external-cms/)
+  </Card>
+  <Card title="CMS Interno" icon="add-document">
+    CMS desenvolvido pela Sensedia, ainda em desenvolvimento.
+  </Card>
 </CardGrid>
+
+## Evolução do DevPortal
+
+O DevPortal é um produto em constante evolução, e por isso, é importante que você esteja sempre atento às novidades e atualizações que são feitas. Para isso, você pode acompanhar as atualizações através do nosso [changelog](/changelog).
