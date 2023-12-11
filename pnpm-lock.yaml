@@ -32,8 +32,8 @@ devDependencies:
     specifier: 10.3.0
     version: 10.3.0
   sst:
-    specifier: ^2.37.0
-    version: 2.37.0
+    specifier: ^2.38.4
+    version: 2.38.4
 
 packages:
 
@@ -285,6 +285,9 @@ packages:
   /@aws-cdk/cloud-assembly-schema@2.110.1:
     resolution: {integrity: sha512-ivyE26pQgiUd5sOXE0DE+s0TfkZDfj1Y/dhseU+k2klsS24Cfeun9fSY568wG40PRheaO5X6jjT/4tuT78P1hQ==}
     engines: {node: '>= 14.15.0'}
+    dependencies:
+      jsonschema: 1.4.1
+      semver: 7.5.4
     dev: true
     bundledDependencies:
       - jsonschema
@@ -310,6 +313,7 @@ packages:
       '@aws-cdk/cloud-assembly-schema': 2.110.1
     dependencies:
       '@aws-cdk/cloud-assembly-schema': 2.110.1
+      semver: 7.5.4
     dev: true
     bundledDependencies:
       - semver
@@ -5820,6 +5824,10 @@ packages:
       graceful-fs: 4.2.11
     dev: true
 
+  /jsonschema@1.4.1:
+    resolution: {integrity: sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==}
+    dev: true
+
   /kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
@@ -7860,8 +7868,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /sst@2.37.0:
-    resolution: {integrity: sha512-dAR2vum4T+tRqkSxRqKkEAelp7vOef4+YZABTCQbYymJ2KROxjq/X9L/RF1FEGFB8cWwnK3ZXhsHba1xReDO+A==}
+  /sst@2.38.4:
+    resolution: {integrity: sha512-tpJg/PXGGW80rD6DpdueFEXfEqF0kOBzD1NwrwrmhkPspYFcQoai48ijxQtTnO1x5JWjJs0oOGBeOuHXxuAp6Q==}
     hasBin: true
     peerDependencies:
       '@sls-next/lambda-at-edge': ^3.7.0
