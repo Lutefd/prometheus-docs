@@ -11,6 +11,9 @@ export default {
   stacks(app) {
     app.stack(function Site({ stack }) {
       const site = new AstroSite(stack, 'site');
+      if (app.stage !== 'production') {
+        app.setDefaultRemovalPolicy('destroy');
+      }
       stack.addOutputs({
         url: site.url,
       });

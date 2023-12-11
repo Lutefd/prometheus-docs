@@ -26,10 +26,33 @@ export default defineConfig({
         {
           label: 'Guias',
           items: [
-            // Each item here is one entry in the navigation menu.
             {
               label: 'Introdução ao CMS Externo',
               link: '/guides/introduction-to-external-cms/',
+            },
+            {
+              label: 'Catálogo de APIs',
+              link: '/guides/api-browser-devportal/',
+            },
+            {
+              label: 'Documentações no DevPortal',
+              link: '/guides/documentations-devportal/',
+            },
+            {
+              label: 'APIs Status',
+              link: '/guides/api-status-devportal/',
+            },
+            {
+              label: 'Dev Dashboard',
+              link: '/guides/dev-dashboard-devportal/',
+            },
+            {
+              label: 'Aplicações',
+              link: '/guides/apps-devportal/',
+            },
+            {
+              label: 'Produtos',
+              link: '/guides/products-devportal/',
             },
           ],
         },
